@@ -2,18 +2,13 @@
 hide:
     - toc
 ---
-# Course Roadmap — IT Infrastructure & DevOps (PG-DITISS Aug 2025)
+# Course Roadmap — IT Infrastructure & Management and DevOps (PGCP-ITISS)
 
 Welcome to the **Course Roadmap**. This page gives you a **high-level overview** of all sessions, showing what you’ll learn in each, before diving into the detailed session pages.
 
 ---
 
 ## Phase 0 – Foundations: Agile & DevOps Mindset
-
-!!! info "Target Dates"
-
-    - **Start Date:** 04-Oct-2025
-    - **End Date:** 04-Oct-2025
 
 Phase 0 lays the foundation for the course by shifting the students’ mindset from traditional IT delivery to Agile and DevOps-oriented thinking.
 
@@ -30,12 +25,6 @@ By the end of Phase 0, students are **“workplace ready”** with collaboration
 
 ## Phase 1 – Data Center Management
 
-!!! info "Target Dates"
-
-    - **Start Date:** 05-Oct-2025
-    - **End Date:** 05-Oct-2025
-
-
 Phase 1 dives into Data Center Management, equipping students with the knowledge to design, evaluate, and operate enterprise-class data centers.
 
 - **Part A** introduces data center management fundamentals: architecture, physical requirements, power and cooling systems, networking, site selection, and budget considerations. Students learn what constitutes a “good design” and how classification standards like Uptime Institute Tiers guide resilience and availability.
@@ -49,12 +38,6 @@ By completing Phase 1, students will be able to design and evaluate a data cente
 ---
 
 ## Phase 2 · Virtualization & Cloud
-
-!!! info "Target Dates"
-
-    - **Start Date:** 06-Oct-2025
-    - **End Date:** 12-Oct-2025
-
 
 Phase 2 transitions students from traditional infrastructure (Phase 1) to virtualization and cloud environments.
 
@@ -76,11 +59,6 @@ This phase builds the practical foundation for DevOps workflows, setting the sta
 ---
 
 ## Phase 3 · DevOps
-
-!!! info "Target Dates"
-
-    - **Start Date:** 13-Oct-2025
-    - **End Date:** 19-Oct-2025
 
 Phase 3 is the core DevOps implementation phase, where students move from infrastructure and cloud (Phase 2) into automation, orchestration, and continuous delivery.
 
