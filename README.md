@@ -55,7 +55,7 @@ Ansible, Chef
 **Career-ready skills:** Everything you do here mirrors **real DevOps engineer roles.**
 **Innovation focus:** Learn not just to use tools, but to design and optimize infrastructure.
 ## 📌 Next Steps
-Start with [Syllabus](docs /roadmap) for a detailed breakdown.
+Start with [Syllabus](docs /roadmap/syllabus.md) for a detailed breakdown.
 Join the Slack workspace and set up your Jira board (see Phase 0 Lab 00).
 Clone the starter GitHub repo and get ready to push your first PR.
 Welcome aboard, Engineer. **Your first sprint at TechOps Inc. begins now.** 🚀
