@@ -1,205 +1,239 @@
-site_name: PG-DITISS 2025 · IT Infrastructure & DevOps
-site_description: Course site for IT Infrastructure & DevOps (PG-DITISS Aug 2025)
-site_url: https://skarkhanis95.github.io/ditiss-devops-course/
-repo_url: https://github.com/skarkhanis95/ditiss-devops-course
+site_name: PGCP-ITISS · IT Infrastructure & Management and DevOps
+site_description: Course site for IT Infrastructure & Management and DevOps
+site_url: https://RUTUJA-8397.github.io
+repo_url: https://github.com/RUTUJA-8397
 repo_name: Course Repo
 
 theme:
-  name: material
-  custom_dir: overrides
-  language: en
-  features:
-    - navigation.tabs
-    - navigation.top
-    - navigation.collapse
-    - navigation.sections
-    - navigation.instant
-    - navigation.footer
-    - content.code.copy
-    - content.tabs.link
-    - search.suggest
-    - search.highlight
-  palette:
-    - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    - scheme: slate
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
-  icon:
-    logo: material/school
-    
+name: material
+custom_dir: overrides
+language: en
+features:
+- navigation.tabs
+- navigation.top
+- navigation.collapse
+- navigation.sections
+- navigation.instant
+- navigation.footer
+- content.code.copy
+- content.tabs.link
+- search.suggest
+- search.highlight
+palette:
+- scheme: default
+toggle:
+icon: material/weather-night
+name: Switch to dark mode
+- scheme: slate
+toggle:
+icon: material/weather-sunny
+name: Switch to light mode
+icon:
+logo: material/school
+
 extra_javascript:
-  - assets/javascripts/toggle-nav.js
+
+* assets/javascripts/toggle-nav.js
 
 extra_css:
-  - assets/stylesheets/toggle-nav.css
+
+* assets/stylesheets/toggle-nav.css
+
 plugins:
-  - search
-  - mermaid2
+
+* search
+* mermaid2
 
 markdown_extensions:
-  - admonition
-  - attr_list
-  - def_list
-  - footnotes
-  - md_in_html
-  - toc:
-      permalink: true
-  - pymdownx.details
-  - pymdownx.critic
-  - pymdownx.highlight
-  - pymdownx.inlinehilite
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  
+
+* admonition
+* attr_list
+* def_list
+* footnotes
+* md_in_html
+* toc:
+  permalink: true
+* pymdownx.details
+* pymdownx.critic
+* pymdownx.highlight
+* pymdownx.inlinehilite
+* pymdownx.superfences:
+  custom_fences:
+  - name: mermaid
+  class: mermaid
+  format: !!python/name:pymdownx.superfences.fence_code_format
+* pymdownx.tabbed:
+  alternate_style: true
+* pymdownx.tasklist:
+  custom_checkbox: true
 
 nav:
-  # === TOP TABS ===
-  - Home: index.md
-  - Course:
-      - Couse Roadmap:
-          - Roadmap: roadmap/roadmap.md
-      - Phase 0 · Agile & Tools:
-          - Overview: phase-0/01_overview.md
-          - Agile:
-            - Agile: phase-0/02_agile.md
-            - Agile Methodologioes: phase-0/03_agile-methodologies.md
-            - Lean in DevOps: phase-0/04_lean.md
-            - Understanding Labs: phase-0/lab00.md
-            - Lab 01: phase-0/lab01.md
-            - Lab 02: phase-0/lab02.md
-            - Knowledge Check: phase-0/knowledge-check.md
-      - Phase 1 . Data Center Management:
-          - Data Center Management: 
-            - Overview: phase-1/overview.md
-            - Architecture: phase-1/dc-arch.md
-            - Physical Area: phase-1/dc-physical-area.md
-            - Power: phase-1/dc-power.md
-            - Cooling: phase-1/dc-cooling.md
-            - Networks: phase-1/dc-networks.md
-            - Weigth: phase-1/dc-weigth.md
-            - Geo-Location: phase-1/dc-geo-location.md
-            - Budget: phase-1/dc-budget.md
-            - Good Design: phase-1/dc-design.md
-            - Classification & Ratings: phase-1/dc-ratings.md
-          - Infrastructure in a DC: 
-            - Overview: phase-1/dc-infra/00_Overview.md
-            - Moudlar Cable Design: phase-1/dc-infra/01_Modular_Cabling_Design.md
-            - Point of Distribution: phase-1/dc-infra/02_Points_of_Distribution.md
-            - ISP WAN: phase-1/dc-infra/03_ISP_WAN_Links.md
-            - NOC: phase-1/dc-infra/04_NOC.md
-            - DataCenter Physical Logical Security and Cleaning: phase-1/dc-infra/05_DataCenter_Physical_Logical_Security_and_Cleaning.md
-            - Reasons for Consolidation: phase-1/dc-infra/06_Reasons_for_Consolidation.md
-            - Consolidation Opportunities: phase-1/dc-infra/07_Consolidation_Opportunities.md
-            - Datacenter Servers: phase-1/dc-infra/08_Datacenter_Servers.md
-            - Server Capacity Planning: phase-1/dc-infra/09_Server_Capacity_Planning.md
-            - Disaster Recovery: phase-1/dc-infra/10_Disaster_Recovery.md
-            - DataCenter Security Guidelines: phase-1/dc-infra/11_DataCenter_Security_Guidelines.md
-            - Internet Security Guidelines: phase-1/dc-infra/12_Internet_Security_Guidelines.md
-            - Source Security Issues: phase-1/dc-infra/13_Source_Security_Issues.md
-            - Best Practices System Administration: phase-1/dc-infra/14_Best_Practices_System_Administration.md
-            - System Administration Automation: phase-1/dc-infra/15_System_Administration_Automation.md
-          - Knowledge Check: phase-1/ph1-quiz.md
-      - Pahse 2 . Virtualization & Cloud):
-          - Overview: phase-2/01_Overview.md
-          - Virtualization:
-            - Introduction: phase-2/virtualization/01_introduction.md
-            - Concepts: phase-2/virtualization/02_concepts.md
-            - OS Virtualization: phase-2/virtualization/03_os_virtualization.md
-            - Clusters: phase-2/virtualization/04_clusters.md
-            - Lab 03: phase-2/virtualization/lab03.md
-            - Lab 04: phase-2/virtualization/lab04.md
-          - Storage Area Network (SAN):
-            - Introduction: phase-2/san/01_overview.md
-            - High Availability: phase-2/san/02_high_availablity.md
-            - Components: phase-2/san/03_san_components.md
-            - Lab 05: phase-2/san/lab05.md
-            - Lab 06: phase-2/san/lab06.md
-            - Lab 07: phase-2/san/lab07.md
-            - Lab 08: phase-2/san/lab08.md
-            - Lab 09: phase-2/san/lab09.md
-          - Cloud Computing:
-            - Cloud Computing: phase-2/cloud-computing/01_cloud_computing.md
-            - HCI: phase-2/cloud-computing/02_hci.md
-            - Open Stack: phase-2/cloud-computing/03_open_stack.md
-            - SDN: phase-2/cloud-computing/04_sdn.md
-            - Lab 10: phase-2/cloud-computing/lab10.md
-            - Public Cloud: phase-2/cloud-computing/05_public_cloud.md
-            - Services of Public Cloud: phase-2/cloud-computing/06_public_cloud_services.md
-            - Services Comparision: phase-2/cloud-computing/07_public_cloud_service_comparision.md
-            - Lab 11: phase-2/cloud-computing/lab11.md
-            - Cloud API & SDK: phase-2/cloud-computing/08_cloud_api_sdk.md
-            - Cloud Migration & DR: phase-2/cloud-computing/09_cloud_dr.md
-            - Config Management: phase-2/cloud-computing/10_config_mgmt.md
-            - Cloud Migration: phase-2/cloud-computing/11_cloud_migration.md
-            - Lab 12: phase-2/cloud-computing/lab12.md
-            - Lab 12(B): phase-2/cloud-computing/lab12B.md
-            - Lab 13: phase-2/cloud-computing/lab13.md
-            - Cloud Logging & Monitoring: phase-2/cloud-computing/12_monitoring.md
-            - Lab 14: phase-2/cloud-computing/lab14.md
-            - Lab 15: phase-2/cloud-computing/lab15.md
-      - Phase 3 · DevOps:
-          - DevOps Foundations: phase-3/01_devops.md
-          - DevOps Basic Tools: phase-3/02_devops_tools.md
-          - Lab 16: phase-3/lab16.md
-          - Lab 17: phase-3/lab17.md
-          - Lab 18: phase-3/lab18.md
-          - Lab 19: phase-3/lab19.md
-          - Lab 20: phase-3/lab20.md
-          - Lab 21: phase-3/lab21.md
-          - Lab 21(B): phase-3/lab21b.md
-          - Infrastructure as Code (IaC): phase-3/03_iac.md
-          - Terraform: phase-3/00_terraform.md
-          - Container Orchestration: phase-3/04a_container_orchestration.md
-          - Swarm & Kubernetes: phase-3/04_container_orchestration.md
-          - Micro Services Deployment: phase-3/05_micro_services_deployment.md
-          - Lab 22(a) (Optional): phase-3/lab22a.md
-          - Lab 22: phase-3/lab22.md
-          - Lab 23: phase-3/lab23.md
-          - Lab 24: phase-3/lab24.md
-          - Lab 25: phase-3/lab25.md
-          - Ansible: phase-3/06_ansible.md
-          - Lab 26: phase-3/lab26.md
-          - Lab 27: phase-3/lab27.md
-  - Capstone Project:
-      - Project:
-          - Challenge: capstone/00_mini_projects.md
-          - Overview: capstone/01_overview.md
-          - Labs Guide: capstone/02_labs_guide.md
-          - Lab 01: capstone/03_lab01.
-          - Lab 02: capstone/04_lab02.md
-          - Lab 03: capstone/05_lab03.md
-          - Lab 04: capstone/06_lab04.md
-          - Lab 05: capstone/07_lab05.md
-          - Lab 06: capstone/08_lab06.md
-          - Lab 07: capstone/09_lab07.md
-          - Lab 08: capstone/10_lab08.md
-          - Lab 09: capstone/11_lab09.md
-          - Lab 10: capstone/12_lab10.md
-          - Lab 11: capstone/13_lab11.md
-          - Lab 12: capstone/14_lab12.md
-          - Lab 13: capstone/15_lab13.md
-          - Lab 14: capstone/16_lab14.md
-          - Lab 15: capstone/17_lab15.md
-          - Lab 16: capstone/18_lab16.md
-          - Lab 17: capstone/19_lab17.md
-          - Lab 18: capstone/20_lab18.md
-  - Resources:
-      - Syllabus: roadmap/syllabus.md
-      - Tools & Setup: resources/tools.md
-      - Labs Intro: resources/labs-intro.md
-      - References: resources/references.md
-      - Announcements: resources/announcements.md
-      - Calendar: resources/calendar.md
-      - FAQs: resources/faqs.md
-  
+
+* Home: index.md
+
+* Course:
+
+  * Course Roadmap: roadmap/roadmap.md
+
+  * Phase 0 · Agile & Tools:
+
+    * Overview: phase-0/01_overview.md
+    * Agile:
+
+      * Agile: phase-0/02_agile.md
+      * Agile Methodologies: phase-0/03_agile-methodologies.md
+      * Lean in DevOps: phase-0/04_lean.md
+      * Understanding Labs: phase-0/lab00.md
+      * Lab 01: phase-0/lab01.md
+      * Lab 02: phase-0/lab02.md
+      * Knowledge Check: phase-0/knowledge-check.md
+
+  * Phase 1 · Data Center Management:
+
+    * Overview: phase-1/overview.md
+
+    * Architecture: phase-1/dc-arch.md
+
+    * Physical Area: phase-1/dc-physical-area.md
+
+    * Power: phase-1/dc-power.md
+
+    * Cooling: phase-1/dc-cooling.md
+
+    * Networks: phase-1/dc-networks.md
+
+    * Weight: phase-1/dc-weight.md
+
+    * Geo-Location: phase-1/dc-geo-location.md
+
+    * Budget: phase-1/dc-budget.md
+
+    * Good Design: phase-1/dc-design.md
+
+    * Classification & Ratings: phase-1/dc-ratings.md
+
+    * Infrastructure in a DC:
+
+      * Overview: phase-1/dc-infra/00_Overview.md
+      * Modular Cable Design: phase-1/dc-infra/01_Modular_Cabling_Design.md
+      * Point of Distribution: phase-1/dc-infra/02_Points_of_Distribution.md
+      * ISP WAN: phase-1/dc-infra/03_ISP_WAN_Links.md
+      * NOC: phase-1/dc-infra/04_NOC.md
+      * DataCenter Physical Logical Security and Cleaning: phase-1/dc-infra/05_DataCenter_Physical_Logical_Security_and_Cleaning.md
+      * Reasons for Consolidation: phase-1/dc-infra/06_Reasons_for_Consolidation.md
+      * Consolidation Opportunities: phase-1/dc-infra/07_Consolidation_Opportunities.md
+      * Datacenter Servers: phase-1/dc-infra/08_Datacenter_Servers.md
+      * Server Capacity Planning: phase-1/dc-infra/09_Server_Capacity_Planning.md
+      * Disaster Recovery: phase-1/dc-infra/10_Disaster_Recovery.md
+      * DataCenter Security Guidelines: phase-1/dc-infra/11_DataCenter_Security_Guidelines.md
+      * Internet Security Guidelines: phase-1/dc-infra/12_Internet_Security_Guidelines.md
+      * Source Security Issues: phase-1/dc-infra/13_Source_Security_Issues.md
+      * Best Practices System Administration: phase-1/dc-infra/14_Best_Practices_System_Administration.md
+      * System Administration Automation: phase-1/dc-infra/15_System_Administration_Automation.md
+
+    * Knowledge Check: phase-1/ph1-quiz.md
+
+  * Phase 2 · Virtualization & Cloud:
+
+    * Overview: phase-2/01_Overview.md
+
+    * Virtualization:
+
+      * Introduction: phase-2/virtualization/01_introduction.md
+      * Concepts: phase-2/virtualization/02_concepts.md
+      * OS Virtualization: phase-2/virtualization/03_os_virtualization.md
+      * Clusters: phase-2/virtualization/04_clusters.md
+      * Lab 03: phase-2/virtualization/lab03.md
+      * Lab 04: phase-2/virtualization/lab04.md
+
+    * Storage Area Network (SAN):
+
+      * Introduction: phase-2/san/01_overview.md
+      * High Availability: phase-2/san/02_high_availability.md
+      * Components: phase-2/san/03_san_components.md
+      * Lab 05: phase-2/san/lab05.md
+      * Lab 06: phase-2/san/lab06.md
+      * Lab 07: phase-2/san/lab07.md
+      * Lab 08: phase-2/san/lab08.md
+      * Lab 09: phase-2/san/lab09.md
+
+    * Cloud Computing:
+
+      * Cloud Computing: phase-2/cloud-computing/01_cloud_computing.md
+      * HCI: phase-2/cloud-computing/02_hci.md
+      * Open Stack: phase-2/cloud-computing/03_open_stack.md
+      * SDN: phase-2/cloud-computing/04_sdn.md
+      * Lab 10: phase-2/cloud-computing/lab10.md
+      * Public Cloud: phase-2/cloud-computing/05_public_cloud.md
+      * Services of Public Cloud: phase-2/cloud-computing/06_public_cloud_services.md
+      * Services Comparison: phase-2/cloud-computing/07_public_cloud_service_comparison.md
+      * Lab 11: phase-2/cloud-computing/lab11.md
+      * Cloud API & SDK: phase-2/cloud-computing/08_cloud_api_sdk.md
+      * Cloud Migration & DR: phase-2/cloud-computing/09_cloud_dr.md
+      * Config Management: phase-2/cloud-computing/10_config_mgmt.md
+      * Cloud Migration: phase-2/cloud-computing/11_cloud_migration.md
+      * Lab 12: phase-2/cloud-computing/lab12.md
+      * Lab 12(B): phase-2/cloud-computing/lab12B.md
+      * Lab 13: phase-2/cloud-computing/lab13.md
+      * Cloud Logging & Monitoring: phase-2/cloud-computing/12_monitoring.md
+      * Lab 14: phase-2/cloud-computing/lab14.md
+      * Lab 15: phase-2/cloud-computing/lab15.md
+
+  * Phase 3 · DevOps:
+
+    * DevOps Foundations: phase-3/01_devops.md
+    * DevOps Basic Tools: phase-3/02_devops_tools.md
+    * Lab 16: phase-3/lab16.md
+    * Lab 17: phase-3/lab17.md
+    * Lab 18: phase-3/lab18.md
+    * Lab 19: phase-3/lab19.md
+    * Lab 20: phase-3/lab20.md
+    * Lab 21: phase-3/lab21.md
+    * Lab 21(B): phase-3/lab21b.md
+    * Infrastructure as Code (IaC): phase-3/03_iac.md
+    * Terraform: phase-3/00_terraform.md
+    * Container Orchestration: phase-3/04a_container_orchestration.md
+    * Swarm & Kubernetes: phase-3/04_container_orchestration.md
+    * Micro Services Deployment: phase-3/05_micro_services_deployment.md
+    * Lab 22(a) (Optional): phase-3/lab22a.md
+    * Lab 22: phase-3/lab22.md
+    * Lab 23: phase-3/lab23.md
+    * Lab 24: phase-3/lab24.md
+    * Lab 25: phase-3/lab25.md
+    * Ansible: phase-3/06_ansible.md
+    * Lab 26: phase-3/lab26.md
+    * Lab 27: phase-3/lab27.md
+
+* Capstone Project:
+
+  * Challenge: capstone/00_mini_projects.md
+  * Overview: capstone/01_overview.md
+  * Labs Guide: capstone/02_labs_guide.md
+  * Lab 01: capstone/03_lab01.md
+  * Lab 02: capstone/04_lab02.md
+  * Lab 03: capstone/05_lab03.md
+  * Lab 04: capstone/06_lab04.md
+  * Lab 05: capstone/07_lab05.md
+  * Lab 06: capstone/08_lab06.md
+  * Lab 07: capstone/09_lab07.md
+  * Lab 08: capstone/10_lab08.md
+  * Lab 09: capstone/11_lab09.md
+  * Lab 10: capstone/12_lab10.md
+  * Lab 11: capstone/13_lab11.md
+  * Lab 12: capstone/14_lab12.md
+  * Lab 13: capstone/15_lab13.md
+  * Lab 14: capstone/16_lab14.md
+  * Lab 15: capstone/17_lab15.md
+  * Lab 16: capstone/18_lab16.md
+  * Lab 17: capstone/19_lab17.md
+  * Lab 18: capstone/20_lab18.md
+
+* Resources:
+
+  * Syllabus: roadmap/syllabus.md
+  * Tools & Setup: resources/tools.md
+  * Labs Intro: resources/labs-intro.md
+  * References: resources/references.md
+  * Announcements: resources/announcements.md
+  * Calendar: resources/calendar.md
+  * FAQs: resources/faqs.md
