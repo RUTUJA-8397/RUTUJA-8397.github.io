@@ -3,8 +3,6 @@
 ## Overview
 This is a self-contained 4-hour workshop module covering Git and GitHub from absolute scratch. It includes a concise lecture plan, hands-on labs with step-by-step instructions and expected outputs, troubleshooting tips, and further resources. Use this in a college session to teach students how to use Git locally and collaborate on GitHub.
 
-Estimated duration: 4 hours (including short breaks and Q&A)
-
 Target audience: Beginners with little or no experience with Git and GitHub.
 
 Prerequisites for students:
