@@ -1,7 +1,7 @@
 (function () {
   function toggleNav() {
     document.documentElement.classList.toggle('nav-hidden');
-    // Persist preference in this browser
+
     try {
       const hidden = document.documentElement.classList.contains('nav-hidden');
       localStorage.setItem('navHidden', hidden ? '1' : '0');
@@ -16,10 +16,18 @@
     } catch (e) {}
   }
 
-  // Wait for DOM (Material loads fast, but just to be safe)
-  document.addEventListener('DOMContentLoaded', function () {
+  function initToggle() {
     restoreState();
-    var btn = document.getElementById('toggle-nav');
-    if (btn) btn.addEventListener('click', toggleNav);
-  });
+
+    const btn = document.getElementById('toggle-nav');
+
+    if (btn) {
+      btn.removeEventListener('click', toggleNav); // prevent duplicate
+      btn.addEventListener('click', toggleNav);
+    }
+  }
+
+  // Works with Material for MkDocs instant navigation
+  document.addEventListener('DOMContentLoaded', initToggle);
+  document.addEventListener('pjax:complete', initToggle);  // KEY FIX
 })();
