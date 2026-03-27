@@ -2,14 +2,14 @@
 hide:
   - toc
   - navigation
-# IT Infrastructure & DevOps — PG‑DITISS Aug 2025
+# IT Infrastructure & Management and DevOps — PGCP‑ITISS
 ---
-# 🚀 PG-DITISS: IT Infrastructure & DevOps  
+# 🚀 PGCP-ITISS: IT Infrastructure & Management and DevOps  
 
 ---
 
 ## 🌐 About the Course
-The **Post Graduate Diploma in IT Infrastructure & Systems Security (PG-DITISS)** blends **theory, labs, and real-world simulations** to prepare you for the rapidly evolving world of **cloud, data centers, and DevOps practices**.  
+The **Post Graduate Certificate Programme in IT Infrastructure Systems & Security (PGCP-ITISS)** blends **theory, labs, and real-world simulations** to prepare you for the rapidly evolving world of **cloud, data centers, and DevOps practices**.  
 
 Think of this course not as a classroom, but as your onboarding at **TechOps Inc.** – a fictional tech company where you’ll play the role of a **DevOps Engineer, Cloud Architect, or System Administrator**. You’ll solve real challenges, build scalable systems, and automate workflows — just like in industry.
 
