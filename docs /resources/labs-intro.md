@@ -1,4 +1,4 @@
-# Labs Introduction — IT Infrastructure & DevOps
+# Labs Introduction — IT Infrastructure & Management and DevOps
 
 Welcome to the **lab environment** of this course.  
 
