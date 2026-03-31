@@ -92,7 +92,7 @@ The course is structured into **3 Phases + Foundation**. Each phase includes **t
 ---
 
 ## 📌 Next Steps
-- Start with **[Syllabus](../roadmap/syllabus.md)** for a detailed breakdown.  
+- Start with **[Syllabus](/docs/roadmap/syllabus.md)** for a detailed breakdown.  
 - Join the Slack workspace and set up your Jira board (see Phase 0 Lab 00).  
 - Clone the starter GitHub repo and get ready to push your first PR.  
 
